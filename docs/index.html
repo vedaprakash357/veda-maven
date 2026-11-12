@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Management System</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="container">
+    <h1>Student Management</h1>
+
+    <!-- Form to Add Student -->
+    <div class="card">
+        <h2>Add New Student</h2>
+        <form id="studentForm">
+            <div class="form-group">
+                <label for="name">Full Name:</label>
+                <input type="text" id="name" required placeholder="Enter student name">
+            </div>
+            <div class="form-group">
+                <label for="email">Email:</label>
+                <input type="email" id="email" required placeholder="Enter email address">
+            </div>
+            <div class="form-group">
+                <label for="course">Course:</label>
+                <input type="text" id="course" required placeholder="Enter course name">
+            </div>
+            <button type="submit" class="btn-primary">Add Student</button>
+        </form>
+    </div>
+
+    <!-- Student List Table -->
+    <div class="card">
+        <h2>Student Directory</h2>
+        <table>
+            <thead>
+            <tr>
+                <th>ID</th>
+                <th>Name</th>
+                <th>Email</th>
+                <th>Course</th>
+                <th>Action</th>
+            </tr>
+            </thead>
+            <tbody id="studentTableBody">
+            <!-- Dynamic rows will be inserted here by JavaScript -->
+            </tbody>
+        </table>
+    </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
